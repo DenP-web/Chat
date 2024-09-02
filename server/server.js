@@ -11,7 +11,7 @@ const { setupSocketIO } = require("./socket/socketConfig");
 const { sessionMiddleware } = require("./middleware/sessionMiddleware");
 const { connectToDatabase } = require("./db");
 
-const { PORT = 10000 } = process.env;
+const PORT = process.env.PORT || 5000;
 const dirname = path.resolve();
 
 require("./passport")(passport);
