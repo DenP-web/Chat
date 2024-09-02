@@ -1,0 +1,39 @@
+.main {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  width: 90vw;
+  border: 1px solid var(--c-middle-gray);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.toast {
+  font-size: 16px;
+  padding: 10px;
+}
+
+.toastBody {
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .toast {
+    font-size: 14px;
+    padding: 2px;
+    top: 1rem;
+    left: 1rem;
+    width: 240px;
+  }
+
+  .toast > .Toastify__toast-icon {
+    display: none;
+  }
+
+  .toastBody {
+    font-size: 12px;
+  }
+}

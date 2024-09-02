@@ -1,0 +1,31 @@
+.sidebar {
+  flex: 0 0 30%;
+  background-color: var(--c-light-gray);
+  padding: 20px;
+  border-right: 1px solid var(--c-middle-gray);
+  overflow-y: auto;
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    padding: 10px;
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transition: all .3s linear;
+    transform: translateX(-100%);
+    flex: 0 0 0;
+    padding: 0;
+  }
+
+  .sidebar.open {
+    flex: 0 0 100%;
+    padding: 5px;
+    transform: translateX(0);
+  }
+}
+

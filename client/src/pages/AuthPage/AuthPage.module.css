@@ -1,0 +1,42 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    display: block;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: var(--c-black-gray);
+   
+}
+
+.btn {
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    color: var(--c-accent-rgb);
+    cursor: pointer;
+    font-size: 12px;
+    transition: transform 0.3s linear;
+
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--c-accent-rgb);
+    bottom: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+}
+
+.btn:hover::before {
+    transform: translateX(0);
+}

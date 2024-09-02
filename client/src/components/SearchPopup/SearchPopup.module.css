@@ -1,0 +1,31 @@
+.popup {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 110px;
+  padding: 10px;
+  background-color: var(--c-white);
+  border: 1px solid var(--c-black-gray);
+  border-radius: 20px;
+  z-index: 10;
+  opacity: 0;
+  transform: translateX(-100%);
+
+  transition: opacity .3s ease, transform .3s linear;
+}
+
+.popup:hover {
+  border-color: var(--c-black-gray);
+}
+
+.popup.open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.title {
+  font-size: 18px;
+  border-bottom: 1px solid var(--c-middle-gray);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}

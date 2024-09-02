@@ -1,0 +1,70 @@
+
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.card.fromMe {
+  flex-direction: row-reverse;
+}
+
+.avatar {
+  margin-right: 12px;
+}
+
+.card.fromMe>.avatar {
+  margin-right: 0;
+  margin-left: 12px;
+}
+
+.message {
+  position: relative;
+  cursor: pointer;
+  background-color: var(--c-middle-gray);
+  color: var(--c-black);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.card.fromMe>.message {
+  background-color: var(--c-accent);
+  color: var(--c-white);
+}
+
+.edit {
+  color: var(--c-black);
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 12px;
+  top: -20px;
+  left: -20px;
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+  padding: 4px;
+  background-color: var(--c-middle-gray);
+  transition: opacity .3s linear, transform .2s linear;
+}
+
+.card.fromMe .message:hover>.edit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media (max-width: 768px) {
+  .message {
+    padding: 4px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

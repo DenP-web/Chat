@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+p,
+figure,
+blockquote,
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-size: inherit;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+select,
+button,
+textarea {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+  outline: 0;
+  font: inherit;
+  color: inherit;
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  transition: border .3s linear,background-color 5000s ease-in-out;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  display: block;
+}
+
+/* Приховати стрілки в полях введення типу "number" */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+::placeholder {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+address {
+  font-style: normal;
+}

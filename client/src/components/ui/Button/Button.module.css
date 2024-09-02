@@ -1,0 +1,26 @@
+
+.button {
+  font-weight: 500;
+  border: none;
+  background-color: var(--c-middle-gray);
+  color: var(--c-black);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color .3s linear, box-shadow .3s linear;
+}
+
+
+.button:hover {
+  color: var(--c-black);
+  box-shadow: 0 0 0 1px var(--c-black);
+}
+
+.button.lg {
+  padding: 10px 20px;
+}
+
+.button.sm {
+  padding: 4px 10px;
+  font-size: 14px;
+}
+

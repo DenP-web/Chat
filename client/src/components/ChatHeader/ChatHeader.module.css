@@ -1,0 +1,15 @@
+.header {
+  position: relative;
+  padding: 16px;
+  background-color: var(--c-light-gray);
+  border-bottom: 1px solid var(--c-middle-gray);
+  display: flex;
+  justify-content: space-between; /* Вирівнює дочірні елементи по горизонталі (по центру) */
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .header {
+    font-size: 14px;
+  }
+}

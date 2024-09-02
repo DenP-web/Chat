@@ -1,0 +1,37 @@
+.chatCard {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: var(--c-white);
+  cursor: pointer;
+  transition: background-color 0.4s linear;
+}
+
+.chatCard:hover {
+  background-color: var(--c-accent);
+  color: var(--c-white);
+}
+
+.fullName {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.chatPreview {
+  font-size: 14px;
+  color: var(--c-black-gray);
+}
+
+@media (max-width: 992px) {
+  .chatCard {
+    gap: 10px;
+  }
+
+  .username {
+    font-size: 14px;
+  }
+}

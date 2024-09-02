@@ -1,0 +1,14 @@
+:root {
+  --c-white: #fff;
+  --c-black: #2C2C2C;
+  --c-red: #FF0000;
+  --c-accent: #2655e0;
+  --c-light-gray: #F9F9F9;
+  --c-middle-gray: #D3D3D3;
+  --c-black-gray: #6C6C6C;
+
+  --xs: 576px;
+  --sm: 768px;
+  --md: 992px;
+  --lg: 1200px;
+}

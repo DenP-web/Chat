@@ -1,0 +1,18 @@
+.searchCard {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--c-middle-gray);
+  margin-bottom: 10px;
+  background-color: var(--c-white);
+  cursor: pointer;
+  transition: background-color 0.4s linear, color .3s linear;
+  border-radius: 10px;
+}
+
+.searchCard:hover {
+  background-color: var(--c-accent);
+  color: var(--c-white)
+}

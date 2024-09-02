@@ -1,0 +1,31 @@
+.autoMessageButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  background-color: var(--c-accent);
+  border: 1px solid var(--c-black-gray);
+  color: var(--c-white);
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.autoMessageButton:hover {
+  background-color: var(--c-black-gray);
+}
+
+.disabled {
+  background-color: var(--c-black-gray);
+}
+
+.disabled:hover {
+  color: var(--c-black-gray);;
+  background-color: var(--c-middle-gray);
+}

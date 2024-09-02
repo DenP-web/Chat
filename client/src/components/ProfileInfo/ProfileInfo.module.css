@@ -1,0 +1,23 @@
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.username p {
+  font-weight: 500;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px ;
+}
+
+@media (max-width: 992px) {
+  .username p {
+    font-size: 14px;
+  }
+}

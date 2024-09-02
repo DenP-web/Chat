@@ -1,0 +1,49 @@
+.wrapper {
+    width: 340px;
+    border: 1px solid var(--c-black-gray);
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.description {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.socialWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+}
+
+.btn {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    transition: all 0.3s linear;
+}
+
+.btn:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 10px 4px rgba(38,85,224,1);
+}
+
+.btn.google {
+    background-image: url('/images/icons/google.svg');
+}
+
+.btn.facebook {
+    background-image: url('/images/icons/facebook.svg');
+}
+
+.btn.linkedIn {
+    background-image: url('/images/icons/linkedIn.svg');
+}

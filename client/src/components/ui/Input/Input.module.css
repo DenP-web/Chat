@@ -1,0 +1,40 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--c-middle-gray);
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color .3s linear, box-shadow .3s linear;
+}
+
+.input.password {
+  margin-bottom: 10px;
+}
+
+.input.password + .error {
+  top: 40px;
+}
+
+.input:hover {
+  box-shadow: 0 0 0 1px var(--c-black);
+}
+
+.input:focus {
+  border-color:  var(--c-black-gray);
+}
+
+.error {
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+  color: red;
+  font-size: 10px;
+}
