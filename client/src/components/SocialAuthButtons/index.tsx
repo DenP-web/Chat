@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { GOOGLE_LOGIN_URL } from "../../constants";
 
 import styles from "./SocialAuthButtons.module.css";
@@ -8,12 +9,17 @@ export default function SocialAuthButtons() {
   };
 
   const handleFacebookLogin = () => {
-    console.log("Facebbok");
+    toast.error(
+      "Facebook login is currently unavailable. Please try again later."
+    );
   };
 
   const handleLinkedInLogin = () => {
-    console.log("LinkedIn");
+    toast.error(
+      "LinkedIn login is currently unavailable. Please try again later."
+    );
   };
+  
   return (
     <div className={styles.wrapper}>
       <span className={styles.description}>
