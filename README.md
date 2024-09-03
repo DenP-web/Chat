@@ -1,6 +1,6 @@
 # MERN Stack Project: Real Time Chat App | Socket.io
 
-![Demo App](https://ibb.co/2Fvd2Zq](https://i.ibb.co/PrcgpDx/Chat.png)
+![Demo App](https://i.ibb.co/PrcgpDx/Chat.png)
 
 Some Features:
 
