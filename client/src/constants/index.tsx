@@ -1,5 +1,3 @@
-// # VITE_API_URL="http://localhost:8080"
-// # VITE_API_URL="https://chat-server-cqce.onrender.com"
 export const API_URL = "https://chat-sa6m.onrender.com";
 export const GOOGLE_LOGIN_URL = API_URL + "/api/auth/google/callback";
 

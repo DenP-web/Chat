@@ -40,8 +40,6 @@ app.get("*", (req, res) => {
 	res.sendFile(path.join(dirname, "client", "dist", "index.html"));
 });
 
-console.log(PORT)
-
 const startServer = () => {
   server.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);

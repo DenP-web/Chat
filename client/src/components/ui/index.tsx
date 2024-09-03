@@ -6,6 +6,8 @@ import SearchInput from "./Input/SearchInput";
 import CloseButton from "./CloseButton";
 import ArrowButton from "./ArrowButton";
 import Loader from "./Loader";
+import Spinner from "./Spinner";
+
 
 export {
   Button,
@@ -15,5 +17,6 @@ export {
   SearchInput,
   CloseButton,
   ArrowButton,
-  Loader
+  Loader,
+  Spinner
 };

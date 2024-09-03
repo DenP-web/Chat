@@ -1,6 +1,8 @@
 import React from "react";
-import styles from "./Button.module.css";
 import cn from "classnames";
+import { Spinner } from "../";
+
+import styles from "./Button.module.css";
 
 type ButtonType = "button" | "submit";
 type ButtonSize = "sm" | "lg";
@@ -9,14 +11,26 @@ interface ButtonProps {
   onClickFn?: () => void;
   type?: ButtonType;
   text: string;
-  size?: ButtonSize
-  isLoading?: boolean
+  size?: ButtonSize;
+  isLoading?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({ onClickFn, type, text, size = 'lg' }) => {
+const Button: React.FC<ButtonProps> = ({
+  onClickFn,
+  type = "button",
+  text,
+  size = "lg",
+  isLoading,
+}) => {
   return (
-    <button onClick={onClickFn} type={type} className={cn(styles.button, styles[size])}>
-      {text}
+    <button
+      onClick={onClickFn}
+      type={type}
+      className={cn(styles.button, styles[size], {
+        [styles.loading]: isLoading,
+      })}
+    >
+      {isLoading ? <Spinner /> : text}
     </button>
   );
 };
