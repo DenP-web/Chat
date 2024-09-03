@@ -8,7 +8,7 @@ import styles from "./MessagesList.module.css";
 
 const MessagesList = () => {
   const chat = useSelector(selectChat);
-  const { data } = useGetMessagesQuery(chat?._id);
+  const { data, isLoading } = useGetMessagesQuery(chat?._id);
   const lastMessageRef = useRef<HTMLLIElement | null>(null);
 
   useEffect(() => {
@@ -18,7 +18,7 @@ const MessagesList = () => {
   }, [data]);
 
   if (!chat) return null;
-  if (!data) return <Loader />;
+  if (!data || isLoading) return <Loader />;
 
   return (
     <ul className={styles.messages}>
